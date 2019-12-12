@@ -1,8 +1,7 @@
-# Personal-Project---Swift-for-iOS
-Concentration Game in Swift using Xcode 11.1
 
 # PersonalProject
-Designing iOS 11 Apps With Swift Course
+Designing iOS 11 Apps With Swift Course:
+Concentration Game in Swift using Xcode 11.1
 
 /* 
     Ryan Yerge
