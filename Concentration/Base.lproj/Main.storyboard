@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uwo-9V-8IM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QjN-k2-8AV">
     <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dK-IM-kZY">
-                                <rect key="frame" x="450" y="1318" width="124" height="48"/>
+                                <rect key="frame" x="450" y="1268" width="124" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -171,6 +171,57 @@
             </objects>
             <point key="canvasLocation" x="1603" y="753"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="gFG-ak-FXk">
+            <objects>
+                <viewController id="ouc-tM-nG9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v3d-tP-c2W">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jik-j6-Feg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="1bO-QI-oGL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDt-DX-WYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828" y="300"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="fsC-jl-o5d">
+            <objects>
+                <viewController id="tJV-qV-QFZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuB-pz-5AB">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jhG-3j-JQb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="bbR-dn-5tx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDG-DN-jJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828" y="-330"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ffv-GC-9lb">
+            <objects>
+                <tabBarController id="QjN-k2-8AV" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sOY-z4-A52">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Uwo-9V-8IM" kind="relationship" relationship="viewControllers" id="Zx6-Pt-Q7U"/>
+                        <segue destination="tJV-qV-QFZ" kind="relationship" relationship="viewControllers" id="1fY-F5-o2Q"/>
+                        <segue destination="ouc-tM-nG9" kind="relationship" relationship="viewControllers" id="eOY-C9-Ukm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOJ-7C-p3i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="1449"/>
+        </scene>
         <!--Concentration Theme Chooser View Controller-->
         <scene sceneID="GhW-v9-BGR">
             <objects>
@@ -187,7 +238,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Sports"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="yrJ-I2-Qo9"/>
+                                            <action selector="changeTheme:" destination="l87-r3-bih" eventType="touchUpInside" id="38t-De-NtV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVw-Od-PPX">
@@ -195,7 +246,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Christmas"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="Tx8-YG-37n"/>
+                                            <action selector="changeTheme:" destination="l87-r3-bih" eventType="touchUpInside" id="Pyr-mn-eVY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsw-e0-6Nz">
@@ -203,7 +254,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Food"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="GHu-hY-AmE"/>
+                                            <action selector="changeTheme:" destination="l87-r3-bih" eventType="touchUpInside" id="hrN-6e-801"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -217,6 +268,9 @@
                         <viewLayoutGuide key="safeArea" id="yT7-CC-CkG"/>
                     </view>
                     <navigationItem key="navigationItem" id="dcT-qQ-aZz"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="nkr-yV-92v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVS-TD-fJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,10 +294,11 @@
             </objects>
             <point key="canvasLocation" x="547.82608695652175" y="8.7053571428571423"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Concentration-->
         <scene sceneID="K5o-nV-jHb">
             <objects>
                 <splitViewController id="Uwo-9V-8IM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Concentration" id="fGc-vg-e3l"/>
                     <connections>
                         <segue destination="KpX-lx-XID" kind="relationship" relationship="masterViewController" id="QH7-qo-Vqt"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="mOv-XM-IBw"/>
@@ -255,6 +310,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yrJ-I2-Qo9"/>
+        <segue reference="nkr-yV-92v"/>
     </inferredMetricsTieBreakers>
 </document>
